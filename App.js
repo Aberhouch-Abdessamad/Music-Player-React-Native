@@ -130,6 +130,7 @@ export default function App() {
 
     return (
         <View style={styles.container}>
+            <Text style={styles.headerTitle}>My Music Player</Text>
             <View style={styles.trackInfo}>
                 <Image style={styles.cover} source={trackList[currentTrackIndex].cover} />
                 <Text style={styles.title}>{trackList[currentTrackIndex].title}</Text>
@@ -178,6 +179,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 20,
+    },
+    headerTitle: {
+        fontSize: 28,
+        color: '#fff',
+        marginBottom: 20,
+        fontWeight: 'bold',
+    },
+    logo: {
+        width: 100,
+        height: 100,
+        marginBottom: 20,
     },
     trackInfo: {
         alignItems: 'center',
